@@ -14,3 +14,7 @@
     transform: scale(1.5);
     cursor: pointer;
 }
+
+.li {
+    list-style: none;
+}

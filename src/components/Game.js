@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from './Image';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 
 export default class Game extends React.Component {
@@ -11,6 +11,7 @@ export default class Game extends React.Component {
                 {Object.keys(this.props.pokemon).map(key =>
                     <Image
                         key={key}
+                        index={key}
                         pokemon={this.props.pokemon[key]}
                     />
                 )}

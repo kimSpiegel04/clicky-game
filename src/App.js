@@ -10,8 +10,16 @@ class App extends React.Component {
   state = {
     score: {},
     topScore: {},
-    pokemon: pokemon
+    pokemon: pokemon,
+    arr: {}
   };
+
+  // when user clicks on an image, add to the array to check
+  // addToArray = (key) => {
+  //   const arr = { ...this.state.arr };
+  //   arr[key] = arr[key] + 1 || 1;
+  //   this.setState({ arr });
+  // };
 
   render(){
     return (
@@ -20,6 +28,7 @@ class App extends React.Component {
         <Banner />
         <Game 
           pokemon={this.state.pokemon}
+          // addToArray={this.addToArray}
         />
         <Footer />
       </div>
